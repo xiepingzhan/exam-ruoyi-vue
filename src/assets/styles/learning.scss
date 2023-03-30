@@ -1,0 +1,25 @@
+/*css回顾*/
+
+/*属性选择器*/
+
+/*存在title属性的a标签元素*/
+  a[title]{
+    color:purple;
+  }
+/*存在href属性,并且属性值匹配'https://example.org'的a标签元素*/
+  a[href='https//example.org']{
+    color: green;
+  }
+/*存在href中属性并且属性值包含example的a标签的元素*/
+  a[href*='example']{
+    color:#ed969e;
+  }
+/*存在href属性以'.org'结尾的a标签元素*/
+  a[href$='.org']{
+    font-size:2em;
+
+  }
+[attr~=value]
+  表示带有以 attr 命名的属性的元素，并且该属性是一个以###空格作为分隔的值列表，其中至少有一个值为 value###。
+  因此, a[class~='ard'] 匹配不到 <a class="ardss"> 仅仅能匹配到 class='ard'
+

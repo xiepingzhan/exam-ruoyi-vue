@@ -1,0 +1,28 @@
+export default {
+  data(){
+    return{
+      resourceTypeList:[
+        {
+          src:require('@/assets/images/resource/tupian.png'),
+          kind:1,
+          text:'图片',
+        },
+        {
+          src:require('@/assets/images/resource/shipin.png'),
+          kind:2,
+          text:'视频'
+        },
+        {
+          src:require('@/assets/images/resource/wendang.png'),
+          kind:3,
+          text:'文档'
+        },
+        {
+          src:require('@/assets/images/resource/quanbu.png'),
+          kind:0,
+          text:'全部'
+        },
+      ]
+    }
+  }
+}
